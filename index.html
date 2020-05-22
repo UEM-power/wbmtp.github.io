@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+    </script>
   </head>
   <body>
     <header>
@@ -15,16 +18,44 @@
         <div class="header-left">
           WBMTP
         </div>
-        <!-- ここにメニューアイコンを追加してください -->
+
         <span class="fa fa-bars menu-icon"></span>
 
         <div class="header-right">
           <a href="#"></a>
-          <a href="#">新規登録</a>
-          <a href="#" class="login">ログイン</a>
+          
+          <a href="#" class="login" id='login-show'>ログイン</a>
         </div>
       </div>
     </header>
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+      <div id="signup-form">
+        <h2>Emailで新規登録</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">新規登録</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 「login-modal」というidを追加してください -->
+
+    <!-- ログインのモーダル部分のHTMLを貼り付けてください -->
+
+  <div class="login-modal-wrapper" id="login-modal">
+    <div class="modal">
+      <div id="login-form">
+        <h2>Emailログイン</h2>
+        <form action="#">
+          <input class="form-control" type="text" placeholder="メールアドレス">
+          <input class="form-control" type="password" placeholder="パスワード">
+          <div id="submit-btn">ログイン</div>
+        </form>
+      </div>
+    </div>
+  </div>
     <div class="top-wrapper">
       <div class="container">
         <h1>WE ARE "WBMTP"</h1>
@@ -32,7 +63,7 @@
         <p>WBMTPは『楽しくかっこよく脳を鍛える』をテーマに2018年に発足した団体です。</p>
         <p>総裁の宮島を筆頭に優秀な人材を数多く排出しています。</p>
         <div class="btn-wrapper">
-          <a href="#" class="btn signup">新規登録はこちら</a>
+          <a href="#" class="btn signup" id="signup-show">新規登録はこちら</a>
           <p>or</p>
           <a href="#" class="btn facebook"><span class="fa fa-facebook"></span>Facebookで登録</a>
           <a href="#" class="btn twitter"><span class="fa fa-twitter"></span>Twitterで登録</a>
@@ -92,5 +123,8 @@
         <p>World Brain Muscle Training Party</p>
       </div>
     </footer>
+    <script src="script.js">
+
+  </script>
   </body>
 </html>
