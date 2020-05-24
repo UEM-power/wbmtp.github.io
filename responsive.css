@@ -53,4 +53,8 @@
   .top-wrapper p {
     font-size: 14px;
   }
+  .modal{
+    width:100%;
+  }
+  
 }
