@@ -1,10 +1,11 @@
 /* タブレット向けレイアウト */
 @media all and (max-width: 1000px) {
-  .lesson {
-    width: 50%;
-    margin-bottom: 50px;
+  .lessons {
+   flex-wrap: wrap;
   }
-
+.lesson{
+   width: 50%;
+}
   footer {
     text-align: center;
   }
@@ -19,10 +20,18 @@
 }
 
 /* スマホ向けレイアウト */
-@media(max-width: 670px) {
+@media all and (max-width: 670px) {
+  .lessons{
+
+    flex-direction:column;
+
+  }
+
+
+
+
   .lesson {
-    width: 100%;
-    text-align:center;
+    margin:0 auto;
   }
 
   .btn {
@@ -54,7 +63,7 @@
   .top-wrapper p {
     font-size: 14px;
   }
-  .signup-modal-wrapper{
+  .modal{
     width:100%;
-  
+  }
 }
