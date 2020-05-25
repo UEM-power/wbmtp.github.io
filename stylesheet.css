@@ -208,10 +208,14 @@ header {
 .heading h2 {
   font-weight: normal;
 }
+.lessons{
+  display: flex;
+}
 
 .lesson {
   float: left;
   width: 25%;
+  flex:auto;
 }
 
 .lesson-icon {
