@@ -31,6 +31,10 @@
     flex-direction:column;
 
   }
+  .lesson-icon{
+    position:relative;
+    right:30px;
+  }
 
 
 
