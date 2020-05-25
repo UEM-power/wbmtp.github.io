@@ -3,6 +3,10 @@
   .lessons {
    flex-wrap: wrap;
   }
+  .lesson-icon{
+    position:relative;
+    right:30px;
+  }
 .lesson{
    width: 50%;
   text-align: center;
